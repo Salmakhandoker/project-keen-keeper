@@ -2,6 +2,7 @@
 
 // src/context/TimelineContext.jsx
 import { createContext, useContext, useState } from 'react';
+import toast from 'react-hot-toast';
 
 const TimelineContext = createContext();
 
@@ -18,6 +19,11 @@ export const TimelineProvider = ({ children }) => {
       title: `${type} with ${friendName}`,
     };
     setTimeline(prev => [newEntry, ...prev]);
+    
+    toast.success(`${type} logged with ${friendName}!`, {
+      position: 'top-center',
+      duration: 2500,
+    });
   };
 
   return (
