@@ -35,11 +35,11 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block">
           <button className="bg-emerald-600 text-white px-6 py-2.5 rounded-2xl font-medium hover:bg-emerald-700 flex items-center gap-2">
             + Add Friend
           </button>
-        </div>
+        </div> */}
 
         <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden">
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}

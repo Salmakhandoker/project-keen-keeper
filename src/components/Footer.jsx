@@ -1,49 +1,55 @@
 
+
 // src/components/Footer.jsx
 const Footer = () => {
   return (
-    <footer className="bg-emerald-800 text-white mt-auto">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-10">
-          {/* Left - Logo + Description */}
-          <div className="flex flex-col items-center md:items-start">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white rounded-2xl flex items-center justify-center">
-                <span className="text-emerald-800 font-bold text-3xl">K</span>
-              </div>
-              <h2 className="text-2xl font-semibold">KeenKeeper</h2>
+    <footer className="bg-[#0F4A3F] text-white py-16">   {/* Dark green color matching screenshot */}
+      <div className="max-w-5xl mx-auto px-6">
+        
+        {/* Main Content Box */}
+        <div className="border border-white/30 rounded-3xl p-12 text-center">
+          
+          {/* Logo */}
+          <h2 className="text-5xl font-bold tracking-tight mb-4">
+            KeenKeeper
+          </h2>
+
+          {/* Description */}
+          <p className="text-white/80 text-lg max-w-md mx-auto mb-10">
+            Your personal shelf of meaningful connections. 
+            Browse, tend, and nurture the relationships that matter most.
+          </p>
+
+          {/* Social Links */}
+          <div className="mb-12">
+            <p className="text-sm uppercase tracking-widest text-white/70 mb-4">Social Links</p>
+            <div className="flex justify-center gap-6">
+              <a href="#" className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-black hover:scale-110 transition">
+                📸
+              </a>
+              <a href="#" className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-black hover:scale-110 transition">
+                𝕗
+              </a>
+              <a href="#" className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-black hover:scale-110 transition">
+                𝕏
+              </a>
             </div>
-            <p className="text-emerald-200 text-center md:text-left max-w-xs">
-              Helping you keep meaningful friendships alive.
-            </p>
           </div>
 
-          {/* Right - Links */}
-          <div className="flex flex-col md:flex-row gap-8 md:gap-12 text-sm">
-            <div>
-              <a href="#" className="hover:text-white transition">Privacy Policy</a>
-            </div>
-            <div>
-              <a href="#" className="hover:text-white transition">Terms of Service</a>
-            </div>
-            <div>
-              <a href="#" className="hover:text-white transition">Contact</a>
-            </div>
-          </div>
+        </div>
 
-          {/* Social Icons (optional) */}
-          <div className="flex gap-5 text-2xl">
-            {/* You can add real icons later if you want */}
-            <span>📘</span>
-            <span>🐦</span>
-            <span>📸</span>
+        {/* Bottom Bar */}
+        <div className="flex flex-col md:flex-row justify-between items-center mt-12 text-sm text-white/70">
+          <div>
+            © 2026 KeenKeeper. All rights reserved.
+          </div>
+          <div className="flex gap-8 mt-6 md:mt-0">
+            <a href="#" className="hover:text-white transition">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition">Terms of Service</a>
+            <a href="#" className="hover:text-white transition">Cookies</a>
           </div>
         </div>
 
-        {/* Bottom Copyright */}
-        <div className="border-t border-emerald-700 mt-12 pt-8 text-center text-emerald-300 text-sm">
-          © 2026 KeenKeeper. All rights reserved.
-        </div>
       </div>
     </footer>
   );
