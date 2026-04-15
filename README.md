@@ -1,16 +1,85 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+📖 Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+KeenKeeper is a responsive friendship tracking web app that helps you maintain meaningful relationships.
+You can manage your friends, track interactions (Call, Text, Video), and visualize your connection history through analytics.
 
-## React Compiler
+🛠️ Technologies Used
+⚛️ React.js
+🌐 React Router DOM
+🎨 Tailwind CSS
+📊 Recharts
+🔔 React Toastify
+📁 JSON (Local Data)
+✨ Key Features
+👥 1. Friend Management
+View all friends from JSON data
+Detailed friend profile page
+Status-based UI (Overdue / Almost Due / On Track)
+⚡ 2. Quick Check-In System
+Call 📞, Text 💬, Video 📹 buttons
+Automatically adds timeline entries
+Toast notifications on click
+📜 3. Timeline Tracking
+View all interaction history
+Filter by Call / Text / Video
+Clean timeline UI with icons & dates
+🔧 Core Functionalities
+🔝 Navbar
+Logo on left, links on right
+Pages: Home, Timeline, Stats
+Icons included
+Active route highlighting
+🎯 Banner Section
+Title & subtitle centered
+Action button (Add Friend)
+4 summary cards
+👫 Friends Section
+Responsive grid (4 columns on desktop)
+Each card includes:
+Image
+Name
+Days since contact
+Tags
+Status (color-based)
+👤 Friend Details Page
+Left Side:
+Profile info (image, name, status, bio, email)
+Buttons:
+⏰ Snooze
+📦 Archive
+🗑️ Delete
+Right Side:
+📊 Stats Cards (Days, Goal, Next Date)
+🎯 Relationship Goal
+⚡ Quick Check-In (Call / Text / Video)
+📜 Timeline Page
+Shows all interaction history
+Each entry includes:
+📅 Date
+🔣 Icon
+📝 Title
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Filter by:
 
-## Expanding the ESLint configuration
+Call
+Text
+Video
+📊 Friendship Analytics (Stats Page)
+Pie chart using Recharts
+Shows:
+Call count
+Text count
+Video count
+📱 Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✔ Mobile
+✔ Tablet
+✔ Desktop
+
+⚙️ Additional Features
+✅ 404 Page (invalid routes)
+⏳ Loading spinner while fetching data
+🔔 Toast notifications
+🔄 Reload-safe routing (no errors after deploy)
